@@ -1,7 +1,6 @@
 package ru.netology.card;
 
 import com.codeborne.selenide.Condition;
-import net.bytebuddy.asm.Advice;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
@@ -12,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class cardWithDeliveryTest {
+public class CardWithDeliveryTest {
     String meetingDay (int day) {
         return LocalDate.now().plusDays(day).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
